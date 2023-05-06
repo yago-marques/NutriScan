@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13582A07021C009E9DB5 /* AppDelegate.swift */; };
+		DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */; };
+		DF1B135D2A07021C009E9DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135C2A07021C009E9DB5 /* ViewController.swift */; };
+		DF1B13602A07021C009E9DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1B135E2A07021C009E9DB5 /* Main.storyboard */; };
+		DF1B13622A07021D009E9DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1B13612A07021D009E9DB5 /* Assets.xcassets */; };
+		DF1B13652A07021D009E9DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */; };
+		DF1B13702A07021D009E9DB5 /* NutriScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */; };
+		DF1B137A2A07021D009E9DB5 /* NutriScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */; };
+		DF1B137C2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF1B136C2A07021D009E9DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1B134D2A07021C009E9DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF1B13542A07021C009E9DB5;
+			remoteInfo = NutriScan;
+		};
+		DF1B13762A07021D009E9DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1B134D2A07021C009E9DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF1B13542A07021C009E9DB5;
+			remoteInfo = NutriScan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF1B13552A07021C009E9DB5 /* NutriScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1B13582A07021C009E9DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF1B135C2A07021C009E9DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF1B135F2A07021C009E9DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF1B13612A07021D009E9DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF1B13642A07021D009E9DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF1B13662A07021D009E9DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriScanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanTests.swift; sourceTree = "<group>"; };
+		DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITests.swift; sourceTree = "<group>"; };
+		DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF1B13522A07021C009E9DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13682A07021D009E9DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13722A07021D009E9DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF1B134C2A07021C009E9DB5 = {
+			isa = PBXGroup;
+			children = (
+				DF1B13572A07021C009E9DB5 /* NutriScan */,
+				DF1B136E2A07021D009E9DB5 /* NutriScanTests */,
+				DF1B13782A07021D009E9DB5 /* NutriScanUITests */,
+				DF1B13562A07021C009E9DB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF1B13562A07021C009E9DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13552A07021C009E9DB5 /* NutriScan.app */,
+				DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */,
+				DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF1B13572A07021C009E9DB5 /* NutriScan */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13582A07021C009E9DB5 /* AppDelegate.swift */,
+				DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */,
+				DF1B135C2A07021C009E9DB5 /* ViewController.swift */,
+				DF1B135E2A07021C009E9DB5 /* Main.storyboard */,
+				DF1B13612A07021D009E9DB5 /* Assets.xcassets */,
+				DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */,
+				DF1B13662A07021D009E9DB5 /* Info.plist */,
+			);
+			path = NutriScan;
+			sourceTree = "<group>";
+		};
+		DF1B136E2A07021D009E9DB5 /* NutriScanTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */,
+			);
+			path = NutriScanTests;
+			sourceTree = "<group>";
+		};
+		DF1B13782A07021D009E9DB5 /* NutriScanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */,
+				DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */,
+			);
+			path = NutriScanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF1B13542A07021C009E9DB5 /* NutriScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1B137F2A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScan" */;
+			buildPhases = (
+				DF1B13512A07021C009E9DB5 /* Sources */,
+				DF1B13522A07021C009E9DB5 /* Frameworks */,
+				DF1B13532A07021C009E9DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NutriScan;
+			productName = NutriScan;
+			productReference = DF1B13552A07021C009E9DB5 /* NutriScan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF1B136A2A07021D009E9DB5 /* NutriScanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1B13822A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanTests" */;
+			buildPhases = (
+				DF1B13672A07021D009E9DB5 /* Sources */,
+				DF1B13682A07021D009E9DB5 /* Frameworks */,
+				DF1B13692A07021D009E9DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1B136D2A07021D009E9DB5 /* PBXTargetDependency */,
+			);
+			name = NutriScanTests;
+			productName = NutriScanTests;
+			productReference = DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF1B13742A07021D009E9DB5 /* NutriScanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1B13852A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanUITests" */;
+			buildPhases = (
+				DF1B13712A07021D009E9DB5 /* Sources */,
+				DF1B13722A07021D009E9DB5 /* Frameworks */,
+				DF1B13732A07021D009E9DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1B13772A07021D009E9DB5 /* PBXTargetDependency */,
+			);
+			name = NutriScanUITests;
+			productName = NutriScanUITests;
+			productReference = DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF1B134D2A07021C009E9DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DF1B13542A07021C009E9DB5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DF1B136A2A07021D009E9DB5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DF1B13542A07021C009E9DB5;
+					};
+					DF1B13742A07021D009E9DB5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DF1B13542A07021C009E9DB5;
+					};
+				};
+			};
+			buildConfigurationList = DF1B13502A07021C009E9DB5 /* Build configuration list for PBXProject "NutriScan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF1B134C2A07021C009E9DB5;
+			productRefGroup = DF1B13562A07021C009E9DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF1B13542A07021C009E9DB5 /* NutriScan */,
+				DF1B136A2A07021D009E9DB5 /* NutriScanTests */,
+				DF1B13742A07021D009E9DB5 /* NutriScanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF1B13532A07021C009E9DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1B13652A07021D009E9DB5 /* LaunchScreen.storyboard in Resources */,
+				DF1B13622A07021D009E9DB5 /* Assets.xcassets in Resources */,
+				DF1B13602A07021C009E9DB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13692A07021D009E9DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13732A07021D009E9DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF1B13512A07021C009E9DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1B135D2A07021C009E9DB5 /* ViewController.swift in Sources */,
+				DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */,
+				DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13672A07021D009E9DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1B13702A07021D009E9DB5 /* NutriScanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1B13712A07021D009E9DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1B137C2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift in Sources */,
+				DF1B137A2A07021D009E9DB5 /* NutriScanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF1B136D2A07021D009E9DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF1B13542A07021C009E9DB5 /* NutriScan */;
+			targetProxy = DF1B136C2A07021D009E9DB5 /* PBXContainerItemProxy */;
+		};
+		DF1B13772A07021D009E9DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF1B13542A07021C009E9DB5 /* NutriScan */;
+			targetProxy = DF1B13762A07021D009E9DB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF1B135E2A07021C009E9DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1B135F2A07021C009E9DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1B13642A07021D009E9DB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF1B137D2A07021D009E9DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF1B137E2A07021D009E9DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF1B13802A07021D009E9DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutriScan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF1B13812A07021D009E9DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NutriScan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF1B13832A07021D009E9DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriScan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NutriScan";
+			};
+			name = Debug;
+		};
+		DF1B13842A07021D009E9DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriScan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NutriScan";
+			};
+			name = Release;
+		};
+		DF1B13862A07021D009E9DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NutriScan;
+			};
+			name = Debug;
+		};
+		DF1B13872A07021D009E9DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NutriScan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF1B13502A07021C009E9DB5 /* Build configuration list for PBXProject "NutriScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1B137D2A07021D009E9DB5 /* Debug */,
+				DF1B137E2A07021D009E9DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1B137F2A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1B13802A07021D009E9DB5 /* Debug */,
+				DF1B13812A07021D009E9DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1B13822A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1B13832A07021D009E9DB5 /* Debug */,
+				DF1B13842A07021D009E9DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1B13852A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1B13862A07021D009E9DB5 /* Debug */,
+				DF1B13872A07021D009E9DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF1B134D2A07021C009E9DB5 /* Project object */;
+}

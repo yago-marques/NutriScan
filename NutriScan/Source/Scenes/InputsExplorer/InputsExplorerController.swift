@@ -58,15 +58,9 @@ final class InputsExplorerController: UIViewController {
     }
 
     // MARK: - Life cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.coordinator.navigation = self.navigationController
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        self.coordinator.navigation = self.navigationController
         interactor.refreshViewConfiguration(request: .init(filterIndex: 0))
 
         Task { [weak self] in
@@ -85,7 +79,7 @@ extension InputsExplorerController: InputsExplorerControllerDelegate {
     }
 
     func setTopBarButtons(_ buttons: [UIBarButtonItem]) {
-        coordinator.setNavigationItens(buttons)
+        navigationItem.setRightBarButtonItems(buttons, animated: true)
     }
 
     func presentMedia(_ media: UIImagePickerController) {

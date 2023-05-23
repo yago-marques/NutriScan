@@ -187,6 +187,7 @@ final class InputsExplorerView: UIView, InputsExplorerViewDelegate {
 
     // MARK: - Methods
     private func playDocumentScanner() {
+        
         controller?.presentMediaOptions(mediaOptionsSheet)
     }
 

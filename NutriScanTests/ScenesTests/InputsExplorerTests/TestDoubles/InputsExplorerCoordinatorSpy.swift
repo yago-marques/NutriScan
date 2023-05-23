@@ -12,7 +12,6 @@ final class InputsExplorerCoordinatorSpy: InputsExplorerCoordinatorManager {
     enum Message: Equatable {
         case navigationConfigured
         case showOverviewCalled
-        case setNavigationItensCalled
         case downMediaOptionCalled
         case showImageClassificationAlertCalled
         case showMediaOptionCalled
@@ -30,10 +29,6 @@ final class InputsExplorerCoordinatorSpy: InputsExplorerCoordinatorManager {
 
     func showOverview(of food: NutriScan.Food) {
         receivedMessages.append(.showOverviewCalled)
-    }
-
-    func setNavigationItens(_ buttons: [UIBarButtonItem]) {
-        receivedMessages.append(.setNavigationItensCalled)
     }
 
     func downMediaOption() {

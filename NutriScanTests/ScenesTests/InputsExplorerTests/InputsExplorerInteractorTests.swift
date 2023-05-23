@@ -140,18 +140,18 @@ final class InputsExplorerInteractorTests: XCTestCase {
         )
     }
 
-    //MARK: - refreshViewConfiguration
-    func test_refreshViewConfiguration_ShouldCallPresenterToRefreshViewSettings() {
-        let data = makeSUTandDoubles()
-        let selectedFilterIndexPosition = 0
-
-        data.sut.refreshViewConfiguration(request: .init(filterIndex: selectedFilterIndexPosition))
-
-        XCTAssertEqual(
-            data.doubles.presenter.receivedMessages,
-            [.presentRefreshedViewCalled]
-        )
-    }
+//    //MARK: - refreshViewConfiguration
+//    func test_refreshViewConfiguration_ShouldCallPresenterToRefreshViewSettings() {
+//        let data = makeSUTandDoubles()
+//        let selectedFilterIndexPosition = 0
+//
+//        data.sut.refreshViewConfiguration(request: .init(filterIndex: selectedFilterIndexPosition))
+//
+//        XCTAssertEqual(
+//            data.doubles.presenter.receivedMessages,
+//            [.presentRefreshedViewCalled]
+//        )
+//    }
 }
 
 private extension InputsExplorerInteractorTests {

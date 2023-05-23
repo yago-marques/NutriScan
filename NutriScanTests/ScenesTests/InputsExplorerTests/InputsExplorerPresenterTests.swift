@@ -10,7 +10,7 @@ import XCTest
 
 typealias InputsExplorerPresenterSUT = (
     sut: InputsExplorerPresenter,
-    doubles: (InputsExplorerControllerSpy)
+    controllerSpy: InputsExplorerControllerSpy
 )
 
 final class InputsExplorerPresenterTests: XCTestCase {

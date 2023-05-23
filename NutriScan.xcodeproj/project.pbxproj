@@ -9,24 +9,64 @@
 /* Begin PBXBuildFile section */
 		DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13582A07021C009E9DB5 /* AppDelegate.swift */; };
 		DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */; };
-		DF1B135D2A07021C009E9DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135C2A07021C009E9DB5 /* ViewController.swift */; };
-		DF1B13602A07021C009E9DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1B135E2A07021C009E9DB5 /* Main.storyboard */; };
+		DF1B135D2A07021C009E9DB5 /* InputsExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135C2A07021C009E9DB5 /* InputsExplorerController.swift */; };
 		DF1B13622A07021D009E9DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1B13612A07021D009E9DB5 /* Assets.xcassets */; };
 		DF1B13652A07021D009E9DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */; };
-		DF1B13702A07021D009E9DB5 /* NutriScanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */; };
-		DF1B137A2A07021D009E9DB5 /* NutriScanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */; };
-		DF1B137C2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */; };
+		DF1B13902A0703B3009E9DB5 /* InputsExplorerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B138F2A0703B3009E9DB5 /* InputsExplorerFactory.swift */; };
+		DF1B13922A0703CD009E9DB5 /* InputsExplorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13912A0703CD009E9DB5 /* InputsExplorerView.swift */; };
+		DF1B139A2A070FB5009E9DB5 /* MLFruitAndVegetableClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13992A070FB5009E9DB5 /* MLFruitAndVegetableClassifier.swift */; };
+		DF1B139C2A070FD7009E9DB5 /* FruitsAndVegetables.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF1B139B2A070FD7009E9DB5 /* FruitsAndVegetables.mlmodel */; };
+		DF1B13A12A071357009E9DB5 /* InputsExplorerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13A02A071357009E9DB5 /* InputsExplorerInteractor.swift */; };
+		DF1B13A42A07155F009E9DB5 /* InputsExplorerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13A32A07155F009E9DB5 /* InputsExplorerPresenter.swift */; };
+		DF1B13AD2A07322C009E9DB5 /* APICallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13AC2A07322C009E9DB5 /* APICallError.swift */; };
+		DF1B13AF2A073258009E9DB5 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13AE2A073258009E9DB5 /* URLSessionHTTPClient.swift */; };
+		DF1B13B22A0732AA009E9DB5 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13B12A0732AA009E9DB5 /* EndpointProtocol.swift */; };
+		DF7F68A12A0BC05E00A8E791 /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F68A02A0BC05E00A8E791 /* ViewCoding.swift */; };
+		DF7F68A42A0BC62300A8E791 /* ExplorerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F68A32A0BC62300A8E791 /* ExplorerHeaderView.swift */; };
+		DF7F68A62A0BD7A300A8E791 /* ExplorerGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7F68A52A0BD7A300A8E791 /* ExplorerGrid.swift */; };
+		DFAD947C2A0E5F7B004C48D4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD947B2A0E5F7B004C48D4 /* FoodCell.swift */; };
+		DFAD947E2A0E6703004C48D4 /* FoodEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD947D2A0E6703004C48D4 /* FoodEndpoint.swift */; };
+		DFAD94812A1259BE004C48D4 /* FoodOverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94802A1259BE004C48D4 /* FoodOverviewController.swift */; };
+		DFAD94832A1259E4004C48D4 /* InputsExplorerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94822A1259E4004C48D4 /* InputsExplorerCoordinator.swift */; };
+		DFAD94852A125ABE004C48D4 /* FoodOverviewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94842A125ABE004C48D4 /* FoodOverviewFactory.swift */; };
+		DFAD94872A12652D004C48D4 /* FoodOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94862A12652D004C48D4 /* FoodOverviewView.swift */; };
+		DFAD948A2A13A88B004C48D4 /* CoredataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94892A13A88B004C48D4 /* CoredataWorker.swift */; };
+		DFAD948C2A13A911004C48D4 /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD948B2A13A911004C48D4 /* CoredataStack.swift */; };
+		DFAD948F2A13A993004C48D4 /* NutriScan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFAD948D2A13A993004C48D4 /* NutriScan.xcdatamodeld */; };
+		DFAD94922A13ABE8004C48D4 /* FoodMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94912A13ABE8004C48D4 /* FoodMapper.swift */; };
+		DFAD94942A13BFDC004C48D4 /* GenericErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94932A13BFDC004C48D4 /* GenericErrorView.swift */; };
+		DFAD94972A13E2AD004C48D4 /* EmptyListNotificationComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94962A13E2AD004C48D4 /* EmptyListNotificationComposer.swift */; };
+		DFAD94992A13E2E5004C48D4 /* ConnectivityErrorComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94982A13E2E5004C48D4 /* ConnectivityErrorComposer.swift */; };
+		DFAD949B2A13E587004C48D4 /* GenericErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD949A2A13E587004C48D4 /* GenericErrorViewModel.swift */; };
+		DFAD949D2A13F531004C48D4 /* FoodOverviewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD949C2A13F531004C48D4 /* FoodOverviewInteractor.swift */; };
+		DFAD949F2A13F551004C48D4 /* FoodOverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD949E2A13F551004C48D4 /* FoodOverviewPresenter.swift */; };
+		DFAD94A12A13F726004C48D4 /* FoodOverviewUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94A02A13F726004C48D4 /* FoodOverviewUseCases.swift */; };
+		DFAD94A42A14023B004C48D4 /* OverviewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94A32A14023B004C48D4 /* OverviewItemCell.swift */; };
+		DFAD94A62A14F402004C48D4 /* FoodServerLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94A52A14F402004C48D4 /* FoodServerLocator.swift */; };
+		DFAD94A82A14FCE1004C48D4 /* ImageClassificationErrorAlertComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94A72A14FCE1004C48D4 /* ImageClassificationErrorAlertComposer.swift */; };
+		DFAD94AB2A157878004C48D4 /* voiceInput.json in Resources */ = {isa = PBXBuildFile; fileRef = DFAD94AA2A157878004C48D4 /* voiceInput.json */; };
+		DFAD94AE2A1578C8004C48D4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFAD94AD2A1578C8004C48D4 /* Lottie */; };
+		DFAD94B02A158008004C48D4 /* TransitionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94AF2A158008004C48D4 /* TransitionHelper.swift */; };
+		DFAD94B22A15902B004C48D4 /* VoiceClassificationErrorAlertComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94B12A15902B004C48D4 /* VoiceClassificationErrorAlertComposer.swift */; };
+		DFAD94B62A164B88004C48D4 /* InputsExplorerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94B52A164B88004C48D4 /* InputsExplorerControllerTests.swift */; };
+		DFAD94B92A164EC3004C48D4 /* InputsExplorerInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94B82A164EC3004C48D4 /* InputsExplorerInteractorSpy.swift */; };
+		DFAD94BB2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94BA2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift */; };
+		DFAD94BE2A16709B004C48D4 /* InputsExplorerViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94BD2A16709B004C48D4 /* InputsExplorerViewSpy.swift */; };
+		DFAD94C02A1BBB81004C48D4 /* MlWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94BF2A1BBB81004C48D4 /* MlWorkerMock.swift */; };
+		DFAD94C22A1BBD8C004C48D4 /* HttpWorkerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94C12A1BBD8C004C48D4 /* HttpWorkerMock.swift */; };
+		DFAD94C42A1BBDEC004C48D4 /* InputsExplorerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94C32A1BBDEC004C48D4 /* InputsExplorerConstants.swift */; };
+		DFAD94C62A1BC1FE004C48D4 /* CoreDataWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94C52A1BC1FE004C48D4 /* CoreDataWorkerStub.swift */; };
+		DFAD94C82A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94C72A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift */; };
+		DFAD94CA2A1BC507004C48D4 /* InputsExplorerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94C92A1BC507004C48D4 /* InputsExplorerInteractorTests.swift */; };
+		DFAD94CE2A1BE6D6004C48D4 /* AsynchronousHandlerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD94CD2A1BE6D6004C48D4 /* AsynchronousHandlerWorker.swift */; };
+		DFEBEE892A09847A00A9FCEA /* InputsExplorerUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEBEE882A09847A00A9FCEA /* InputsExplorerUseCases.swift */; };
+		DFEBEE8C2A09885A00A9FCEA /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEBEE8B2A09885A00A9FCEA /* Food.swift */; };
+		DFEBEE8E2A098DF100A9FCEA /* RemoteFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEBEE8D2A098DF100A9FCEA /* RemoteFood.swift */; };
+		DFEBEE932A09BB2A00A9FCEA /* MLClassifierWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEBEE922A09BB2A00A9FCEA /* MLClassifierWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DF1B136C2A07021D009E9DB5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF1B134D2A07021C009E9DB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF1B13542A07021C009E9DB5;
-			remoteInfo = NutriScan;
-		};
-		DF1B13762A07021D009E9DB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF1B134D2A07021C009E9DB5 /* Project object */;
 			proxyType = 1;
@@ -39,16 +79,61 @@
 		DF1B13552A07021C009E9DB5 /* NutriScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1B13582A07021C009E9DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF1B135C2A07021C009E9DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF1B135F2A07021C009E9DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF1B135C2A07021C009E9DB5 /* InputsExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerController.swift; sourceTree = "<group>"; };
 		DF1B13612A07021D009E9DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1B13642A07021D009E9DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF1B13662A07021D009E9DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriScanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanTests.swift; sourceTree = "<group>"; };
-		DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITests.swift; sourceTree = "<group>"; };
-		DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriScanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF1B138F2A0703B3009E9DB5 /* InputsExplorerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerFactory.swift; sourceTree = "<group>"; };
+		DF1B13912A0703CD009E9DB5 /* InputsExplorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerView.swift; sourceTree = "<group>"; };
+		DF1B13992A070FB5009E9DB5 /* MLFruitAndVegetableClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLFruitAndVegetableClassifier.swift; sourceTree = "<group>"; };
+		DF1B139B2A070FD7009E9DB5 /* FruitsAndVegetables.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitsAndVegetables.mlmodel; sourceTree = "<group>"; };
+		DF1B13A02A071357009E9DB5 /* InputsExplorerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerInteractor.swift; sourceTree = "<group>"; };
+		DF1B13A32A07155F009E9DB5 /* InputsExplorerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerPresenter.swift; sourceTree = "<group>"; };
+		DF1B13AC2A07322C009E9DB5 /* APICallError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallError.swift; sourceTree = "<group>"; };
+		DF1B13AE2A073258009E9DB5 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		DF1B13B12A0732AA009E9DB5 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		DF7F68A02A0BC05E00A8E791 /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
+		DF7F68A32A0BC62300A8E791 /* ExplorerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerHeaderView.swift; sourceTree = "<group>"; };
+		DF7F68A52A0BD7A300A8E791 /* ExplorerGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerGrid.swift; sourceTree = "<group>"; };
+		DFAD947B2A0E5F7B004C48D4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		DFAD947D2A0E6703004C48D4 /* FoodEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEndpoint.swift; sourceTree = "<group>"; };
+		DFAD94802A1259BE004C48D4 /* FoodOverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewController.swift; sourceTree = "<group>"; };
+		DFAD94822A1259E4004C48D4 /* InputsExplorerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerCoordinator.swift; sourceTree = "<group>"; };
+		DFAD94842A125ABE004C48D4 /* FoodOverviewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewFactory.swift; sourceTree = "<group>"; };
+		DFAD94862A12652D004C48D4 /* FoodOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewView.swift; sourceTree = "<group>"; };
+		DFAD94892A13A88B004C48D4 /* CoredataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataWorker.swift; sourceTree = "<group>"; };
+		DFAD948B2A13A911004C48D4 /* CoredataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStack.swift; sourceTree = "<group>"; };
+		DFAD948E2A13A993004C48D4 /* NutriVision.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NutriVision.xcdatamodel; sourceTree = "<group>"; };
+		DFAD94912A13ABE8004C48D4 /* FoodMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapper.swift; sourceTree = "<group>"; };
+		DFAD94932A13BFDC004C48D4 /* GenericErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorView.swift; sourceTree = "<group>"; };
+		DFAD94962A13E2AD004C48D4 /* EmptyListNotificationComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListNotificationComposer.swift; sourceTree = "<group>"; };
+		DFAD94982A13E2E5004C48D4 /* ConnectivityErrorComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityErrorComposer.swift; sourceTree = "<group>"; };
+		DFAD949A2A13E587004C48D4 /* GenericErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorViewModel.swift; sourceTree = "<group>"; };
+		DFAD949C2A13F531004C48D4 /* FoodOverviewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewInteractor.swift; sourceTree = "<group>"; };
+		DFAD949E2A13F551004C48D4 /* FoodOverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewPresenter.swift; sourceTree = "<group>"; };
+		DFAD94A02A13F726004C48D4 /* FoodOverviewUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOverviewUseCases.swift; sourceTree = "<group>"; };
+		DFAD94A32A14023B004C48D4 /* OverviewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewItemCell.swift; sourceTree = "<group>"; };
+		DFAD94A52A14F402004C48D4 /* FoodServerLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodServerLocator.swift; sourceTree = "<group>"; };
+		DFAD94A72A14FCE1004C48D4 /* ImageClassificationErrorAlertComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationErrorAlertComposer.swift; sourceTree = "<group>"; };
+		DFAD94AA2A157878004C48D4 /* voiceInput.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = voiceInput.json; sourceTree = "<group>"; };
+		DFAD94AF2A158008004C48D4 /* TransitionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionHelper.swift; sourceTree = "<group>"; };
+		DFAD94B12A15902B004C48D4 /* VoiceClassificationErrorAlertComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceClassificationErrorAlertComposer.swift; sourceTree = "<group>"; };
+		DFAD94B52A164B88004C48D4 /* InputsExplorerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerControllerTests.swift; sourceTree = "<group>"; };
+		DFAD94B82A164EC3004C48D4 /* InputsExplorerInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerInteractorSpy.swift; sourceTree = "<group>"; };
+		DFAD94BA2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerCoordinatorSpy.swift; sourceTree = "<group>"; };
+		DFAD94BD2A16709B004C48D4 /* InputsExplorerViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerViewSpy.swift; sourceTree = "<group>"; };
+		DFAD94BF2A1BBB81004C48D4 /* MlWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MlWorkerMock.swift; sourceTree = "<group>"; };
+		DFAD94C12A1BBD8C004C48D4 /* HttpWorkerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpWorkerMock.swift; sourceTree = "<group>"; };
+		DFAD94C32A1BBDEC004C48D4 /* InputsExplorerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerConstants.swift; sourceTree = "<group>"; };
+		DFAD94C52A1BC1FE004C48D4 /* CoreDataWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWorkerStub.swift; sourceTree = "<group>"; };
+		DFAD94C72A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerPresenterSpy.swift; sourceTree = "<group>"; };
+		DFAD94C92A1BC507004C48D4 /* InputsExplorerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerInteractorTests.swift; sourceTree = "<group>"; };
+		DFAD94CD2A1BE6D6004C48D4 /* AsynchronousHandlerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousHandlerWorker.swift; sourceTree = "<group>"; };
+		DFEBEE882A09847A00A9FCEA /* InputsExplorerUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerUseCases.swift; sourceTree = "<group>"; };
+		DFEBEE8B2A09885A00A9FCEA /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DFEBEE8D2A098DF100A9FCEA /* RemoteFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFood.swift; sourceTree = "<group>"; };
+		DFEBEE922A09BB2A00A9FCEA /* MLClassifierWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLClassifierWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +141,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAD94AE2A1578C8004C48D4 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DF1B13682A07021D009E9DB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF1B13722A07021D009E9DB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +160,6 @@
 			children = (
 				DF1B13572A07021C009E9DB5 /* NutriScan */,
 				DF1B136E2A07021D009E9DB5 /* NutriScanTests */,
-				DF1B13782A07021D009E9DB5 /* NutriScanUITests */,
 				DF1B13562A07021C009E9DB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +169,6 @@
 			children = (
 				DF1B13552A07021C009E9DB5 /* NutriScan.app */,
 				DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */,
-				DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +176,9 @@
 		DF1B13572A07021C009E9DB5 /* NutriScan */ = {
 			isa = PBXGroup;
 			children = (
-				DF1B13582A07021C009E9DB5 /* AppDelegate.swift */,
-				DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */,
-				DF1B135C2A07021C009E9DB5 /* ViewController.swift */,
-				DF1B135E2A07021C009E9DB5 /* Main.storyboard */,
-				DF1B13612A07021D009E9DB5 /* Assets.xcassets */,
-				DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */,
+				DF1B138B2A070357009E9DB5 /* Resources */,
+				DF1B138A2A070343009E9DB5 /* Application */,
+				DF1B13932A07042D009E9DB5 /* Source */,
 				DF1B13662A07021D009E9DB5 /* Info.plist */,
 			);
 			path = NutriScan;
@@ -113,18 +187,244 @@
 		DF1B136E2A07021D009E9DB5 /* NutriScanTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF1B136F2A07021D009E9DB5 /* NutriScanTests.swift */,
+				DFAD94B32A164B27004C48D4 /* ScenesTests */,
 			);
 			path = NutriScanTests;
 			sourceTree = "<group>";
 		};
-		DF1B13782A07021D009E9DB5 /* NutriScanUITests */ = {
+		DF1B13882A070303009E9DB5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DF1B13792A07021D009E9DB5 /* NutriScanUITests.swift */,
-				DF1B137B2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift */,
+				DF1B13892A07030B009E9DB5 /* InputsExplorer */,
+				DFAD947F2A125995004C48D4 /* FoodOverview */,
 			);
-			path = NutriScanUITests;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DF1B13892A07030B009E9DB5 /* InputsExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F68A22A0BC5F400A8E791 /* UI Components */,
+				DFEBEE882A09847A00A9FCEA /* InputsExplorerUseCases.swift */,
+				DF1B13912A0703CD009E9DB5 /* InputsExplorerView.swift */,
+				DF1B13A02A071357009E9DB5 /* InputsExplorerInteractor.swift */,
+				DF1B13A32A07155F009E9DB5 /* InputsExplorerPresenter.swift */,
+				DF1B135C2A07021C009E9DB5 /* InputsExplorerController.swift */,
+				DF1B138F2A0703B3009E9DB5 /* InputsExplorerFactory.swift */,
+				DFAD94822A1259E4004C48D4 /* InputsExplorerCoordinator.swift */,
+			);
+			path = InputsExplorer;
+			sourceTree = "<group>";
+		};
+		DF1B138A2A070343009E9DB5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13582A07021C009E9DB5 /* AppDelegate.swift */,
+				DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */,
+				DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DF1B138B2A070357009E9DB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94A92A157863004C48D4 /* Lottie */,
+				DF1B13612A07021D009E9DB5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF1B13932A07042D009E9DB5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94952A13E26D004C48D4 /* ErrorComposers */,
+				DF7F689F2A0BC04C00A8E791 /* Utils */,
+				DF1B13942A070439009E9DB5 /* Workers */,
+				DFEBEE8A2A09851D00A9FCEA /* Models */,
+				DFAD94902A13ABD6004C48D4 /* Mapppers */,
+				DF1B13882A070303009E9DB5 /* Scenes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DF1B13942A070439009E9DB5 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94CC2A1BE69D004C48D4 /* AsynchronousHandlerWorker */,
+				DFAD94882A13A86C004C48D4 /* CoredataWorker */,
+				DF1B13AB2A073211009E9DB5 /* HTTPClient */,
+				DF1B13982A070F0B009E9DB5 /* MLWorker */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		DF1B13982A070F0B009E9DB5 /* MLWorker */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B139B2A070FD7009E9DB5 /* FruitsAndVegetables.mlmodel */,
+				DF1B13992A070FB5009E9DB5 /* MLFruitAndVegetableClassifier.swift */,
+				DFEBEE922A09BB2A00A9FCEA /* MLClassifierWorker.swift */,
+			);
+			path = MLWorker;
+			sourceTree = "<group>";
+		};
+		DF1B13AB2A073211009E9DB5 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13B02A073294009E9DB5 /* Endpoints */,
+				DF1B13AC2A07322C009E9DB5 /* APICallError.swift */,
+				DF1B13AE2A073258009E9DB5 /* URLSessionHTTPClient.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		DF1B13B02A073294009E9DB5 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				DF1B13B12A0732AA009E9DB5 /* EndpointProtocol.swift */,
+				DFAD947D2A0E6703004C48D4 /* FoodEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		DF7F689F2A0BC04C00A8E791 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F68A02A0BC05E00A8E791 /* ViewCoding.swift */,
+				DFAD94A52A14F402004C48D4 /* FoodServerLocator.swift */,
+				DFAD94AF2A158008004C48D4 /* TransitionHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF7F68A22A0BC5F400A8E791 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF7F68A32A0BC62300A8E791 /* ExplorerHeaderView.swift */,
+				DF7F68A52A0BD7A300A8E791 /* ExplorerGrid.swift */,
+				DFAD947B2A0E5F7B004C48D4 /* FoodCell.swift */,
+				DFAD94932A13BFDC004C48D4 /* GenericErrorView.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		DFAD947F2A125995004C48D4 /* FoodOverview */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94A22A140227004C48D4 /* UI Components */,
+				DFAD94842A125ABE004C48D4 /* FoodOverviewFactory.swift */,
+				DFAD94802A1259BE004C48D4 /* FoodOverviewController.swift */,
+				DFAD94862A12652D004C48D4 /* FoodOverviewView.swift */,
+				DFAD949C2A13F531004C48D4 /* FoodOverviewInteractor.swift */,
+				DFAD949E2A13F551004C48D4 /* FoodOverviewPresenter.swift */,
+				DFAD94A02A13F726004C48D4 /* FoodOverviewUseCases.swift */,
+			);
+			path = FoodOverview;
+			sourceTree = "<group>";
+		};
+		DFAD94882A13A86C004C48D4 /* CoredataWorker */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94892A13A88B004C48D4 /* CoredataWorker.swift */,
+				DFAD948B2A13A911004C48D4 /* CoredataStack.swift */,
+				DFAD948D2A13A993004C48D4 /* NutriScan.xcdatamodeld */,
+			);
+			path = CoredataWorker;
+			sourceTree = "<group>";
+		};
+		DFAD94902A13ABD6004C48D4 /* Mapppers */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94912A13ABE8004C48D4 /* FoodMapper.swift */,
+			);
+			path = Mapppers;
+			sourceTree = "<group>";
+		};
+		DFAD94952A13E26D004C48D4 /* ErrorComposers */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94962A13E2AD004C48D4 /* EmptyListNotificationComposer.swift */,
+				DFAD94982A13E2E5004C48D4 /* ConnectivityErrorComposer.swift */,
+				DFAD94A72A14FCE1004C48D4 /* ImageClassificationErrorAlertComposer.swift */,
+				DFAD94B12A15902B004C48D4 /* VoiceClassificationErrorAlertComposer.swift */,
+			);
+			path = ErrorComposers;
+			sourceTree = "<group>";
+		};
+		DFAD94A22A140227004C48D4 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94A32A14023B004C48D4 /* OverviewItemCell.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		DFAD94A92A157863004C48D4 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94AA2A157878004C48D4 /* voiceInput.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		DFAD94B32A164B27004C48D4 /* ScenesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94B42A164B3A004C48D4 /* InputsExplorerTests */,
+			);
+			path = ScenesTests;
+			sourceTree = "<group>";
+		};
+		DFAD94B42A164B3A004C48D4 /* InputsExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94CB2A1BC522004C48D4 /* Utils */,
+				DFAD94B72A164E3E004C48D4 /* TestDoubles */,
+				DFAD94B52A164B88004C48D4 /* InputsExplorerControllerTests.swift */,
+				DFAD94C92A1BC507004C48D4 /* InputsExplorerInteractorTests.swift */,
+			);
+			path = InputsExplorerTests;
+			sourceTree = "<group>";
+		};
+		DFAD94B72A164E3E004C48D4 /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94B82A164EC3004C48D4 /* InputsExplorerInteractorSpy.swift */,
+				DFAD94BA2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift */,
+				DFAD94BD2A16709B004C48D4 /* InputsExplorerViewSpy.swift */,
+				DFAD94BF2A1BBB81004C48D4 /* MlWorkerMock.swift */,
+				DFAD94C12A1BBD8C004C48D4 /* HttpWorkerMock.swift */,
+				DFAD94C52A1BC1FE004C48D4 /* CoreDataWorkerStub.swift */,
+				DFAD94C72A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		DFAD94CB2A1BC522004C48D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94C32A1BBDEC004C48D4 /* InputsExplorerConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DFAD94CC2A1BE69D004C48D4 /* AsynchronousHandlerWorker */ = {
+			isa = PBXGroup;
+			children = (
+				DFAD94CD2A1BE6D6004C48D4 /* AsynchronousHandlerWorker.swift */,
+			);
+			path = AsynchronousHandlerWorker;
+			sourceTree = "<group>";
+		};
+		DFEBEE8A2A09851D00A9FCEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFEBEE8B2A09885A00A9FCEA /* Food.swift */,
+				DFEBEE8D2A098DF100A9FCEA /* RemoteFood.swift */,
+				DFAD949A2A13E587004C48D4 /* GenericErrorViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +443,9 @@
 			dependencies = (
 			);
 			name = NutriScan;
+			packageProductDependencies = (
+				DFAD94AD2A1578C8004C48D4 /* Lottie */,
+			);
 			productName = NutriScan;
 			productReference = DF1B13552A07021C009E9DB5 /* NutriScan.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +468,6 @@
 			productReference = DF1B136B2A07021D009E9DB5 /* NutriScanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DF1B13742A07021D009E9DB5 /* NutriScanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF1B13852A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanUITests" */;
-			buildPhases = (
-				DF1B13712A07021D009E9DB5 /* Sources */,
-				DF1B13722A07021D009E9DB5 /* Frameworks */,
-				DF1B13732A07021D009E9DB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF1B13772A07021D009E9DB5 /* PBXTargetDependency */,
-			);
-			name = NutriScanUITests;
-			productName = NutriScanUITests;
-			productReference = DF1B13752A07021D009E9DB5 /* NutriScanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +485,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = DF1B13542A07021C009E9DB5;
 					};
-					DF1B13742A07021D009E9DB5 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = DF1B13542A07021C009E9DB5;
-					};
 				};
 			};
 			buildConfigurationList = DF1B13502A07021C009E9DB5 /* Build configuration list for PBXProject "NutriScan" */;
@@ -215,13 +496,15 @@
 				Base,
 			);
 			mainGroup = DF1B134C2A07021C009E9DB5;
+			packageReferences = (
+				DFAD94AC2A1578C7004C48D4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = DF1B13562A07021C009E9DB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DF1B13542A07021C009E9DB5 /* NutriScan */,
 				DF1B136A2A07021D009E9DB5 /* NutriScanTests */,
-				DF1B13742A07021D009E9DB5 /* NutriScanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +516,11 @@
 			files = (
 				DF1B13652A07021D009E9DB5 /* LaunchScreen.storyboard in Resources */,
 				DF1B13622A07021D009E9DB5 /* Assets.xcassets in Resources */,
-				DF1B13602A07021C009E9DB5 /* Main.storyboard in Resources */,
+				DFAD94AB2A157878004C48D4 /* voiceInput.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DF1B13692A07021D009E9DB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF1B13732A07021D009E9DB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +534,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1B135D2A07021C009E9DB5 /* ViewController.swift in Sources */,
+				DF1B13A12A071357009E9DB5 /* InputsExplorerInteractor.swift in Sources */,
+				DFAD94832A1259E4004C48D4 /* InputsExplorerCoordinator.swift in Sources */,
+				DFAD94A82A14FCE1004C48D4 /* ImageClassificationErrorAlertComposer.swift in Sources */,
+				DFAD948F2A13A993004C48D4 /* NutriScan.xcdatamodeld in Sources */,
+				DFEBEE8C2A09885A00A9FCEA /* Food.swift in Sources */,
+				DFAD94872A12652D004C48D4 /* FoodOverviewView.swift in Sources */,
+				DFAD94812A1259BE004C48D4 /* FoodOverviewController.swift in Sources */,
+				DF1B135D2A07021C009E9DB5 /* InputsExplorerController.swift in Sources */,
+				DFAD949B2A13E587004C48D4 /* GenericErrorViewModel.swift in Sources */,
+				DF1B139A2A070FB5009E9DB5 /* MLFruitAndVegetableClassifier.swift in Sources */,
+				DF7F68A12A0BC05E00A8E791 /* ViewCoding.swift in Sources */,
+				DFAD94922A13ABE8004C48D4 /* FoodMapper.swift in Sources */,
+				DFAD94942A13BFDC004C48D4 /* GenericErrorView.swift in Sources */,
+				DFAD94992A13E2E5004C48D4 /* ConnectivityErrorComposer.swift in Sources */,
+				DFAD94B22A15902B004C48D4 /* VoiceClassificationErrorAlertComposer.swift in Sources */,
+				DFAD948C2A13A911004C48D4 /* CoredataStack.swift in Sources */,
+				DF1B13AD2A07322C009E9DB5 /* APICallError.swift in Sources */,
 				DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */,
+				DFAD94A12A13F726004C48D4 /* FoodOverviewUseCases.swift in Sources */,
+				DF1B13922A0703CD009E9DB5 /* InputsExplorerView.swift in Sources */,
+				DF1B139C2A070FD7009E9DB5 /* FruitsAndVegetables.mlmodel in Sources */,
+				DF1B13AF2A073258009E9DB5 /* URLSessionHTTPClient.swift in Sources */,
+				DFAD949D2A13F531004C48D4 /* FoodOverviewInteractor.swift in Sources */,
+				DF7F68A62A0BD7A300A8E791 /* ExplorerGrid.swift in Sources */,
+				DFAD94972A13E2AD004C48D4 /* EmptyListNotificationComposer.swift in Sources */,
+				DFEBEE892A09847A00A9FCEA /* InputsExplorerUseCases.swift in Sources */,
+				DF1B13902A0703B3009E9DB5 /* InputsExplorerFactory.swift in Sources */,
+				DFEBEE932A09BB2A00A9FCEA /* MLClassifierWorker.swift in Sources */,
+				DF1B13A42A07155F009E9DB5 /* InputsExplorerPresenter.swift in Sources */,
+				DFAD94A62A14F402004C48D4 /* FoodServerLocator.swift in Sources */,
+				DFAD948A2A13A88B004C48D4 /* CoredataWorker.swift in Sources */,
+				DF7F68A42A0BC62300A8E791 /* ExplorerHeaderView.swift in Sources */,
 				DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */,
+				DFAD94852A125ABE004C48D4 /* FoodOverviewFactory.swift in Sources */,
+				DFAD947E2A0E6703004C48D4 /* FoodEndpoint.swift in Sources */,
+				DFAD949F2A13F551004C48D4 /* FoodOverviewPresenter.swift in Sources */,
+				DFAD94CE2A1BE6D6004C48D4 /* AsynchronousHandlerWorker.swift in Sources */,
+				DFAD947C2A0E5F7B004C48D4 /* FoodCell.swift in Sources */,
+				DFAD94B02A158008004C48D4 /* TransitionHelper.swift in Sources */,
+				DF1B13B22A0732AA009E9DB5 /* EndpointProtocol.swift in Sources */,
+				DFEBEE8E2A098DF100A9FCEA /* RemoteFood.swift in Sources */,
+				DFAD94A42A14023B004C48D4 /* OverviewItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +583,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1B13702A07021D009E9DB5 /* NutriScanTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF1B13712A07021D009E9DB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF1B137C2A07021D009E9DB5 /* NutriScanUITestsLaunchTests.swift in Sources */,
-				DF1B137A2A07021D009E9DB5 /* NutriScanUITests.swift in Sources */,
+				DFAD94BE2A16709B004C48D4 /* InputsExplorerViewSpy.swift in Sources */,
+				DFAD94C22A1BBD8C004C48D4 /* HttpWorkerMock.swift in Sources */,
+				DFAD94BB2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift in Sources */,
+				DFAD94C42A1BBDEC004C48D4 /* InputsExplorerConstants.swift in Sources */,
+				DFAD94C02A1BBB81004C48D4 /* MlWorkerMock.swift in Sources */,
+				DFAD94C82A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift in Sources */,
+				DFAD94B62A164B88004C48D4 /* InputsExplorerControllerTests.swift in Sources */,
+				DFAD94C62A1BC1FE004C48D4 /* CoreDataWorkerStub.swift in Sources */,
+				DFAD94CA2A1BC507004C48D4 /* InputsExplorerInteractorTests.swift in Sources */,
+				DFAD94B92A164EC3004C48D4 /* InputsExplorerInteractorSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +604,9 @@
 			target = DF1B13542A07021C009E9DB5 /* NutriScan */;
 			targetProxy = DF1B136C2A07021D009E9DB5 /* PBXContainerItemProxy */;
 		};
-		DF1B13772A07021D009E9DB5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF1B13542A07021C009E9DB5 /* NutriScan */;
-			targetProxy = DF1B13762A07021D009E9DB5 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DF1B135E2A07021C009E9DB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF1B135F2A07021C009E9DB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF1B13632A07021D009E9DB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,11 +742,16 @@
 				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NutriScan/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NutriScan;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Usada para scanear frutas e verduras";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Usamos o microfone para captar áudio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Escutamos você para facilitar o processo de procura de alimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +759,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,11 +778,16 @@
 				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NutriScan/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NutriScan;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Usada para scanear frutas e verduras";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Usamos o microfone para captar áudio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Escutamos você para facilitar o processo de procura de alimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +795,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -526,42 +844,6 @@
 			};
 			name = Release;
 		};
-		DF1B13862A07021D009E9DB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3PC4MSN8T7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NutriScan;
-			};
-			name = Debug;
-		};
-		DF1B13872A07021D009E9DB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3PC4MSN8T7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NutriScanUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NutriScan;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,16 +874,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF1B13852A07021D009E9DB5 /* Build configuration list for PBXNativeTarget "NutriScanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF1B13862A07021D009E9DB5 /* Debug */,
-				DF1B13872A07021D009E9DB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFAD94AC2A1578C7004C48D4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFAD94AD2A1578C8004C48D4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAD94AC2A1578C7004C48D4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DFAD948D2A13A993004C48D4 /* NutriScan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFAD948E2A13A993004C48D4 /* NutriVision.xcdatamodel */,
+			);
+			currentVersion = DFAD948E2A13A993004C48D4 /* NutriVision.xcdatamodel */;
+			path = NutriScan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DF1B134D2A07021C009E9DB5 /* Project object */;
 }

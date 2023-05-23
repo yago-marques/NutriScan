@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002DBA312A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */; };
 		00716EE02A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00716EDF2A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift */; };
 		DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13582A07021C009E9DB5 /* AppDelegate.swift */; };
 		DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		002DBA2F2A1CE71400BC09A4 /* NutriScan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NutriScan.xctestplan; sourceTree = "<group>"; };
+		002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerControllerSpy.swift; sourceTree = "<group>"; };
 		00716EDF2A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerPresenterTests.swift; sourceTree = "<group>"; };
 		DF1B13552A07021C009E9DB5 /* NutriScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1B13582A07021C009E9DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				DFAD94C12A1BBD8C004C48D4 /* HttpWorkerMock.swift */,
 				DFAD94C52A1BC1FE004C48D4 /* CoreDataWorkerStub.swift */,
 				DFAD94C72A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift */,
+				002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */,
 			);
 			path = TestDoubles;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002DBA312A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift in Sources */,
 				DFAD94BE2A16709B004C48D4 /* InputsExplorerViewSpy.swift in Sources */,
 				DFAD94C22A1BBD8C004C48D4 /* HttpWorkerMock.swift in Sources */,
 				DFAD94BB2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift in Sources */,

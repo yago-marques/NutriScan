@@ -19,18 +19,6 @@ typealias InputsExplorerControllerSUT = (
 
 final class InputsExplorerControllerTests: XCTestCase {
 
-    // MARK: - viewDidLoad
-    func test_viewDidLoad_WhenViewLoadInFirstTime_ShouldConfigureCoordinatorNavigation() {
-        let data = makeSUTandDoubles()
-
-        data.sut.viewDidLoad()
-
-        XCTAssertEqual(
-            data.doubles.coordinator.receivedMessages,
-            [.navigationConfigured]
-        )
-    }
-
     // MARK: - viewWillAppear
     func test_viewWillAppear_WhenViewAppear_ShouldRefreshViewConfigurationAndFetchFoods() {
         let data = makeSUTandDoubles()
@@ -63,18 +51,6 @@ final class InputsExplorerControllerTests: XCTestCase {
         XCTAssertEqual(
             data.doubles.interactor.receivedMessages,
             []
-        )
-    }
-
-    // MARK: - setTopBarButtons
-    func test_setTopBarButtons_ShouldCallCoordinatorToConfigureNavigationButtons() {
-        let data = makeSUTandDoubles()
-
-        data.sut.setTopBarButtons([UIBarButtonItem()])
-
-        XCTAssertEqual(
-            data.doubles.coordinator.receivedMessages,
-            [.setNavigationItensCalled]
         )
     }
 

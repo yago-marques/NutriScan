@@ -9,7 +9,6 @@ import UIKit
 
 protocol InputsExplorerCoordinatorManager {
     var navigation: UINavigationController? {get set}
-    func setNavigationItens(_ buttons: [UIBarButtonItem])
     func showOverview(of food: Food)
     func downMediaOption()
     func showImageClassificationAlert()
@@ -23,10 +22,6 @@ final class InputsExplorerCoordinator: InputsExplorerCoordinatorManager {
 
     init(navigation: UINavigationController? = nil) {
         self.navigation = navigation
-    }
-
-    func setNavigationItens(_ buttons: [UIBarButtonItem]) {
-        navigation?.navigationItem.setRightBarButtonItems(buttons, animated: true)
     }
 
     func showOverview(of food: Food) {

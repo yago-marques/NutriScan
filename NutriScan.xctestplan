@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "041EA1A5-AABF-4E34-8CE5-5449895CA096",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:NutriScan.xcodeproj",
+      "identifier" : "DF1B13542A07021C009E9DB5",
+      "name" : "NutriScan"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:NutriScan.xcodeproj",
+        "identifier" : "DF1B136A2A07021D009E9DB5",
+        "name" : "NutriScanTests"
+      }
+    }
+  ],
+  "version" : 1
+}

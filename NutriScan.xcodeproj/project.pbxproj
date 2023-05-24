@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002DBA312A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */; };
+		00716EE02A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00716EDF2A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift */; };
 		DF1B13592A07021C009E9DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B13582A07021C009E9DB5 /* AppDelegate.swift */; };
 		DF1B135B2A07021C009E9DB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */; };
 		DF1B135D2A07021C009E9DB5 /* InputsExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1B135C2A07021C009E9DB5 /* InputsExplorerController.swift */; };
@@ -76,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002DBA2F2A1CE71400BC09A4 /* NutriScan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NutriScan.xctestplan; sourceTree = "<group>"; };
+		002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerControllerSpy.swift; sourceTree = "<group>"; };
+		00716EDF2A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsExplorerPresenterTests.swift; sourceTree = "<group>"; };
 		DF1B13552A07021C009E9DB5 /* NutriScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1B13582A07021C009E9DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF1B135A2A07021C009E9DB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		DF1B134C2A07021C009E9DB5 = {
 			isa = PBXGroup;
 			children = (
+				002DBA2F2A1CE71400BC09A4 /* NutriScan.xctestplan */,
 				DF1B13572A07021C009E9DB5 /* NutriScan */,
 				DF1B136E2A07021D009E9DB5 /* NutriScanTests */,
 				DF1B13562A07021C009E9DB5 /* Products */,
@@ -383,6 +389,7 @@
 				DFAD94B72A164E3E004C48D4 /* TestDoubles */,
 				DFAD94B52A164B88004C48D4 /* InputsExplorerControllerTests.swift */,
 				DFAD94C92A1BC507004C48D4 /* InputsExplorerInteractorTests.swift */,
+				00716EDF2A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift */,
 			);
 			path = InputsExplorerTests;
 			sourceTree = "<group>";
@@ -397,6 +404,7 @@
 				DFAD94C12A1BBD8C004C48D4 /* HttpWorkerMock.swift */,
 				DFAD94C52A1BC1FE004C48D4 /* CoreDataWorkerStub.swift */,
 				DFAD94C72A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift */,
+				002DBA302A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift */,
 			);
 			path = TestDoubles;
 			sourceTree = "<group>";
@@ -583,11 +591,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002DBA312A1CEB6A00BC09A4 /* InputsExplorerControllerSpy.swift in Sources */,
 				DFAD94BE2A16709B004C48D4 /* InputsExplorerViewSpy.swift in Sources */,
 				DFAD94C22A1BBD8C004C48D4 /* HttpWorkerMock.swift in Sources */,
 				DFAD94BB2A165185004C48D4 /* InputsExplorerCoordinatorSpy.swift in Sources */,
 				DFAD94C42A1BBDEC004C48D4 /* InputsExplorerConstants.swift in Sources */,
 				DFAD94C02A1BBB81004C48D4 /* MlWorkerMock.swift in Sources */,
+				00716EE02A1CE57100F4D4FA /* InputsExplorerPresenterTests.swift in Sources */,
 				DFAD94C82A1BC32B004C48D4 /* InputsExplorerPresenterSpy.swift in Sources */,
 				DFAD94B62A164B88004C48D4 /* InputsExplorerControllerTests.swift in Sources */,
 				DFAD94C62A1BC1FE004C48D4 /* CoreDataWorkerStub.swift in Sources */,

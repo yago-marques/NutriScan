@@ -76,8 +76,8 @@ final class InputsExplorerInteractor: InputsExplorerInteracting {
     }
 }
 
-private extension InputsExplorerInteractor {
-    private func updateCacheIfNeeded(with remoteModels: [RemoteFood]) throws {
+extension InputsExplorerInteractor {
+    func updateCacheIfNeeded(with remoteModels: [RemoteFood]) throws {
         let cachedFoods = try coredataWorker.readFoods()
 
         if cachedFoods.isEmpty {
@@ -85,7 +85,7 @@ private extension InputsExplorerInteractor {
         }
     }
 
-    private func fetchCache() throws -> [RemoteFood]? {
+    func fetchCache() throws -> [RemoteFood]? {
         let cachedFoods = try coredataWorker.readFoods()
 
         if cachedFoods.isEmpty {
@@ -95,7 +95,7 @@ private extension InputsExplorerInteractor {
         }
     }
 
-    private func tryLoadCachedFoods() throws {
+    func tryLoadCachedFoods() throws {
         do {
             if let cachedFoods = try self.fetchCache() {
                 presenter.presentFoodGrid(response: .init(foods: cachedFoods))
@@ -107,7 +107,7 @@ private extension InputsExplorerInteractor {
         }
     }
 
-    private func LoadRemoteFoods() async {
+    func LoadRemoteFoods() async {
         do {
             if let data = try await httpWorker.request(endpoint: FoodListEndpoint()) {
                 let foods = try JSONDecoder().decode([RemoteFood].self, from: data)

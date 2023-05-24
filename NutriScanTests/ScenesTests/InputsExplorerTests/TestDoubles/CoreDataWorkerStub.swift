@@ -16,13 +16,22 @@ final class CoreDataWorkerStub: FoodCoredataWorker {
 
     var foods = [RemoteFood]()
     var receivedMessages = [Message]()
+    var willFail = false
 
     func createFoods(with remoteModels: [NutriScan.RemoteFood]) throws {
+        if willFail {
+            throw CacheError.cacheEmpty
+        }
+
         remoteModels.forEach { foods.append($0) }
         receivedMessages.append(.createFoodsCalled)
     }
 
     func readFoods() throws -> [NutriScan.RemoteFood] {
+        if willFail {
+            throw CacheError.cacheEmpty
+        }
+        
         receivedMessages.append(.readFoodsCalled)
         return foods
     }

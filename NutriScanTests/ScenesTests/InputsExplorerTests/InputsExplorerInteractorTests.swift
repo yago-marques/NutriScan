@@ -140,18 +140,75 @@ final class InputsExplorerInteractorTests: XCTestCase {
         )
     }
 
-//    //MARK: - refreshViewConfiguration
-//    func test_refreshViewConfiguration_ShouldCallPresenterToRefreshViewSettings() {
-//        let data = makeSUTandDoubles()
-//        let selectedFilterIndexPosition = 0
-//
-//        data.sut.refreshViewConfiguration(request: .init(filterIndex: selectedFilterIndexPosition))
-//
-//        XCTAssertEqual(
-//            data.doubles.presenter.receivedMessages,
-//            [.presentRefreshedViewCalled]
-//        )
-//    }
+    //MARK: - updateCacheIfNeeded
+    func test_updateCacheIfNeeded_WhenCacheIsEmpty_ShouldVerifyIfCacheIsEmpty_ShouldCreateCache() throws {
+        let data = makeSUTandDoubles()
+
+        try data.sut.updateCacheIfNeeded(with: [RemoteFood]())
+
+        XCTAssertEqual(
+            data.doubles.coredataWorker.receivedMessages,
+            [.readFoodsCalled, .createFoodsCalled]
+        )
+    }
+
+    func test_updateCacheIfNeeded_WhenCacheIsNotEmpty_ShouldVerifyIfCacheIsEmpty_ShouldNotCreateCache() throws {
+        let data = makeSUTandDoubles()
+        data.doubles.coredataWorker.populateCache()
+
+        try data.sut.updateCacheIfNeeded(with: [RemoteFood]())
+
+        XCTAssertEqual(
+            data.doubles.coredataWorker.receivedMessages,
+            [.readFoodsCalled]
+        )
+    }
+
+    //MARK: - fetchCache
+    func test_fetchCache_WhenCacheIsEmpty_ShouldReturnNil() throws {
+        let data = makeSUTandDoubles()
+
+        let cache = try data.sut.fetchCache()
+
+        XCTAssertNil(cache)
+    }
+
+    func test_fetchCache_WhenCacheIsNotEmpty_ShouldReturnValidCache() throws {
+        let data = makeSUTandDoubles()
+        data.doubles.coredataWorker.populateCache()
+
+        let cache = try data.sut.fetchCache()
+
+        XCTAssertNotNil(cache)
+    }
+
+    func test_fetchCache_WhenHasACoredataError_ShouldThrowCacheError() throws {
+        let data = makeSUTandDoubles()
+        data.doubles.coredataWorker.willFail = true
+
+        XCTAssertThrowsError(try data.sut.fetchCache())
+    }
+
+    //MARK: - tryLoadCachedFoods
+    func test_tryLoadCachedFoods_WhenCacheIsEmpty_ShouldThrowCacheErrorEmpty() throws {
+        let data = makeSUTandDoubles()
+
+        XCTAssertThrowsError(try data.sut.tryLoadCachedFoods()) { error in
+            XCTAssertEqual(error as! CacheError, CacheError.cacheEmpty)
+        }
+    }
+
+    func test_tryLoadCachedFoods_WhenCacheIsNotEmpty_ShouldCallPresenterToShowFoodGrid() throws {
+        let data = makeSUTandDoubles()
+        data.doubles.coredataWorker.populateCache()
+
+        try data.sut.tryLoadCachedFoods()
+
+        XCTAssertEqual(
+            data.doubles.presenter.receivedMessages,
+            [.presentFoodGridCalled]
+        )
+    }
 }
 
 private extension InputsExplorerInteractorTests {
